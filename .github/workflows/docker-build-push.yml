@@ -39,4 +39,4 @@ jobs:
             docker stop prjku
             docker rm prjku
             docker rmi muhdjau/prjbe12
-            docker run --name prjku -d -p 8000:8000 muhdjau/prjbe12
+            docker run --name prjku --link mysqlbe12 -d -p 8000:8000 muhdjau/prjbe12
